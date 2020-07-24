@@ -18,7 +18,7 @@ func printOutput(muArray, stdArray []float64, totalMu, totalStd float64) {
 }
 
 func main() {
-	//
+
 	var mainConfig *Config
 
 	mainConfig, _ = parseFlags(mainConfig, os.Args[1:])
