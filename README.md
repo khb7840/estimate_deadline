@@ -1,4 +1,4 @@
-# [UNDER CONSTRUCTION] estimate_deadline
+# estimate_deadline
 ## Inspired by "The Clean Coder - A Code of Conduct for Professional Programmers, Robert C. Martin"
 
 The object of this script is to estimate the deadline for a task (or a project)
@@ -15,8 +15,7 @@ with trivariate input:
 go run estimate_deadline.go -o 1,2,3 -m 2,5,7 -p 4,9,12
 ```
 ### Output
-1. mean and standard deviation for individual tasks & all tasks
-2. 1-std interval & 2-std interval
+mean and standard deviation for individual tasks & all tasks
 
 ### Formula
 ```py
@@ -28,3 +27,11 @@ total_std = math.sqrt(sum(std ** 2))
 Beta distribution is presumed in this formula which makes sense 
 because the minimum duration is often more certain than the maximum.
 
+
+### Note
+This project is one of personal practices for Test-Driven Development.
+
+```yaml
+Author: Hyunbin Kim (khb7840@gmail.com)
+Last edited: 2020-07-24 09:23:58
+```
